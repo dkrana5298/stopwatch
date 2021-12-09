@@ -1,14 +1,94 @@
 .main {
-    margin: 50px 100px;
+    margin: 20px;
     border: 2px solid black;
     box-shadow: 5px 5px 5px 5px gold;
-    padding: 100px 50px;
+    padding: 5%;
+    padding-bottom: 25%;
+    
 }
-
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .container{
     display: flex;
-    padding: 20px;
+    border: 2px solid silver;
+    font-size: 300%;
+    color: red;
+    justify-content: center;
 }
-#stop{
-    display: none;
+#start {
+  background-color: gold;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 4% 8%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: green;
+  margin: 2% 0 0 0;
+  position: absolute;
+  
+}
+#pause {
+  display: none;
+  background-color: gold;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 4% 8%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: green;
+  margin: 2% 0 0 1%;
+  position: absolute;
+  left: 38%;
+}
+#continue {
+  position: absolute;
+  background-color: gold;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 4% 8%;
+  font-weight: bold;
+  color: green;
+  margin: 2% 2% 0 0;
+  left: 38%;
+  display: none;
+}
+#stop {
+  display: none;
+  background-color: gold;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 4% 8%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: green;
+  margin: 2% 2% 0 2%;
+  position: absolute;
+  left: 70%;
+}
+
+@media screen and (min-width:100px) and (max-width:767px){
+    body {
+        background-color: gray;
+    }
+    #start{
+        padding: 5%;
+    }
+    #pause{
+        padding: 5%;
+    }
+    #continue {
+        padding: 5%;
+    }
+    #stop{
+        padding: 5%;
+    }
 }

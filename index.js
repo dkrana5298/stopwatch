@@ -17,9 +17,9 @@ start.onclick=function (){
     console.log("clicked");
     stop.style.display= "block";
     stop.style.display= "inline";
-  //  pausebtn.innerHTML= "pause";
+  // pausebtn.innerHTML= "pause";
     pausebtn.style.display= "block";
-
+    start.style.display= "none";
  clearInterval(interval);
  interval=setInterval(startTimer, 1000); //this function must be remember for interval purpose.
 }

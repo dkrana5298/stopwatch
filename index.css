@@ -1,0 +1,14 @@
+.main {
+    margin: 50px 100px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px 5px gold;
+    padding: 100px 50px;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+}
+#stop{
+    display: none;
+}

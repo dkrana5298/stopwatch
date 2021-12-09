@@ -5,6 +5,7 @@ let secondCount = document.getElementById('second');
 // fetching all the button
 var start=document.getElementById('start');
 var pausebtn=document.getElementById('pause');
+var conti=document.getElementById('continue');
 var stop=document.getElementById('stop');
 // initializing all the variable
 var interval;
@@ -16,22 +17,35 @@ start.onclick=function (){
     console.log("clicked");
     stop.style.display= "block";
     stop.style.display= "inline";
-    pausebtn.innerHTML= "pause"
+  //  pausebtn.innerHTML= "pause";
+    pausebtn.style.display= "block";
+
  clearInterval(interval);
  interval=setInterval(startTimer, 1000); //this function must be remember for interval purpose.
 }
 //function on pause 
 pausebtn.onclick=function (){
    clearInterval(interval);
-   console.log("pause clicked")
-   pausebtn.innerHTML="continue";
-   Pause();
+   console.log("pause clicked");
+   conti.style.display= "block";
+   pausebtn.style.display= "none";
+   start.style.display= "none"
 }
-
+//for continue button
+conti.onclick=function (){
+   clearInterval(interval);
+   interval=setInterval(startTimer, 1000);
+   pausebtn.style.display= "block";
+   conti.style.display= "none";
+  
+}
 //function on stop
 stop.onclick=function(){
    clearInterval(interval);
    clearFields();
+   start.style.display= "block";
+   pausebtn.style.display= "none";
+   stop.style.display= "none";
 }
 function startTimer(){
    second++;
@@ -59,7 +73,9 @@ function startTimer(){
    if(hour > 9){
       hourCount.innerHTML= hour;
    }
+   
 }
+
 //for pausing 
 function Pause() {
    if(second > 9){

@@ -46,6 +46,7 @@ stop.onclick=function(){
    start.style.display= "block";
    pausebtn.style.display= "none";
    stop.style.display= "none";
+   conti.style.display= "none";
 }
 function startTimer(){
    second++;
